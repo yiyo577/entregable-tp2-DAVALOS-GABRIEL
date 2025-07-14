@@ -1,0 +1,79 @@
+/* Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 20px;
+  padding: 0;
+  color: #333;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #444;
+}
+
+section {
+  background-color: #fff;
+  padding: 15px;
+  margin: 15px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  max-width: 600px;
+}
+
+/* Formulario */
+#formulario-producto input {
+  padding: 8px;
+  margin: 5px;
+  width: 45%;
+}
+
+#formulario-producto button {
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#formulario-producto button:hover {
+  background-color: #0056b3;
+}
+
+/* Productos */
+.producto, .item-carrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.producto button, .item-carrito button {
+  padding: 6px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.producto button:hover, .item-carrito button:hover {
+  background-color: #218838;
+}
+
+/* Total del carrito */
+#total {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Carrito vacío */
+#carrito:empty::before {
+  content: "Tu carrito está vacío.";
+  color: #999;
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
